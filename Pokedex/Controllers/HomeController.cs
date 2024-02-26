@@ -22,7 +22,6 @@ public class HomeController : Controller
             var pokemons = JsonSerializer.Deserialize<List<Pokemon>>(dados);
             return View (pokemons);
         }      
-        return View();
     }
 
     public IActionResult Privacy()
